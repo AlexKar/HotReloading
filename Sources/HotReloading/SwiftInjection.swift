@@ -264,10 +264,6 @@ public class SwiftInjection: NSObject {
                 detail("Patched class '\(oldClassName)' (\(patched),\(swizzled))")
             }
 
-            if let XCTestCase = objc_getClass("XCTestCase") as? AnyClass,
-                newClass.isSubclass(of: XCTestCase) {
-                testClasses.append(newClass)
-            }
         }
 
         // (Reverse) interposing, reducers, operation on a device etc.
