@@ -183,7 +183,7 @@ public class SwiftEval: NSObject {
     }
 
     // Xcode related info
-    @objc public var xcodeDev = "/Applications/Xcode.app/Contents/Developer"
+    @objc public var xcodeDev = "/Applications/Xcode-13.3.1.app/Contents/Developer"
 
     @objc public var projectFile: String?
     @objc public var derivedLogs: String?
